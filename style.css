@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Faz com que a box obedeça as limitações de altura e largura*/
+}
+:root{
+    --text-color: white;
+    --bg-url:   url('assets/bg-mobile.jpg');
+    --stroke-color: 
+}
+
+.light{
+    --text-color: black;
+    --bg-url: url('./assets/bg-mobile-light.jpg');
+}
+body *{
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+body{
+    background: var(--bg-url) no-repeat top center/cover;
+}
+
+#container{
+    width: 360px;
+    /* margin: auto;
+    margin-top: 56px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto; */
+    margin: 56px auto 0px;
+    padding: 0 4px;
+}
+
+#profile{
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img{
+    width: 112px;
+    /* display: block;
+    margin: auto;
+    */
+}
+
+#profile{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px;
+}
+
+/* links */
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 24px 0px;
+}
+ul li a{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
+    /* Embaciando ligeiramente */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    /* Retirando a formatação do link (none, overline, underline)*/
+    text-decoration: none;
+    font-weight: 500;
+
+    /* Adicionando uma transação */
+    transition: background 0.2s;
+
+}
+
+ /* Pseudo-selector */
+ul li a:hover{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #FFFF;
+}
+
+/* Social Links */
+#social-links{
+    display: flex;
+    gap: 36px;
+    padding: 24px 0px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    transition: background 2s;
+}
+
+#social-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#social-links a:hover{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    border-radius: 50px;
+    
+}
+
+footer{
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
+}
